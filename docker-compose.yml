@@ -15,7 +15,7 @@ services:
     image: rclone/rclone:latest
     restart: unless-stopped
     environment:
-      TZ: Europe/Berlin
+      TZ: Asia/Shanghai
       PUID: 1000
       PGID: 1000
     volumes:
