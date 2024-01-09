@@ -1,6 +1,6 @@
 # Zurg configuration version
 zurg: v1
-token: IUTW5KNVV7WRIPIN7BBTH4P2LFZSUMVJGWVTLKZRSVSYDLZTPRTA # https://real-debrid.com/apitoken
+token: xxx # https://real-debrid.com/apitoken
 
 # basic functionality
 host: "[::]" # do not change this if you are running it inside a docker container
