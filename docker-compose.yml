@@ -7,6 +7,7 @@ services:
     ports:
       - 9999:9999
     volumes:
+#      - ./plex_update.sh:/app/plex_update.sh
       - ./config.yml:/app/config.yml
       - zurgdata:/app/data
 
@@ -14,11 +15,11 @@ services:
     image: rclone/rclone:latest
     restart: unless-stopped
     environment:
-      TZ: Asia/Shanghai
+      TZ: Europe/Berlin
       PUID: 1000
       PGID: 1000
     volumes:
-      - /mnt/remote/realdebrid:/data:rshared
+      - /mnt/zurg:/data:rshared
       - ./rclone.conf:/config/rclone/rclone.conf
     cap_add:
       - SYS_ADMIN
